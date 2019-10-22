@@ -21,8 +21,26 @@ public class RollerBall : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
+
 		if (mRigidBody != null) {
-			if (Input.GetButton ("Horizontal")) {
+            //our code
+            if (Input.GetAxis("Horizontal") != 0)
+            {
+                mRigidBody.AddForce(Vector3.right * Input.GetAxis("Horizontal") * 10);
+            }
+
+            if (Input.GetAxis("Vertical") != 0)
+            {
+                mRigidBody.AddForce(Vector3.back * Input.GetAxis("Vertical") * -10);
+            }
+
+            //we need to add in code for jump, my controller is broken
+
+
+
+            /*
+             * their code
+            if (Input.GetButton ("Horizontal")) {
 				mRigidBody.AddForce(Vector3.right * Input.GetAxis("Horizontal")*10);
 			}
 			if (Input.GetButton ("Vertical")) {
@@ -32,8 +50,14 @@ public class RollerBall : MonoBehaviour {
 				if(mAudioSource != null && JumpSound != null){
 					mAudioSource.PlayOneShot(JumpSound);
 				}
-				mRigidBody.AddForce(Vector3.up*200);
+				mRigidBody.AddForce(Vector3.up*20);
 			}
+            *
+            */
+
+
+
+
 		}
 		if (ViewCamera != null) {
 			Vector3 direction = (Vector3.up*2+Vector3.back)*2;
