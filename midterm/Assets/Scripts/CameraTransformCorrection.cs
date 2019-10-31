@@ -7,7 +7,11 @@ public class CameraTransformCorrection : MonoBehaviour
     public GameObject mainCamera;
     public GameObject cameraProxy;
     public float lerpSpeed; // speed at which to interpolate between the proxy and main camera
+    // speed to move camera
+    public float moveSpeed=1.0f;
     // Start is called before the first frame update
+
+    private float cameraHeight = 1.0f;
     void Start()
     {
         
@@ -21,6 +25,9 @@ public class CameraTransformCorrection : MonoBehaviour
         // Set the rotation value of this camera to be a portion of the offset, over time this will correct slowly
         transform.rotation = Quaternion.Lerp(transform.rotation, correction, lerpSpeed);
         // copy the transform position
-        transform.position = cameraProxy.transform.position;
+        transform.position = new Vector3(cameraProxy.transform.position.x * moveSpeed, 
+            cameraProxy.transform.position.y, 
+            cameraProxy.transform.position.z * moveSpeed
+            );
     }
 }

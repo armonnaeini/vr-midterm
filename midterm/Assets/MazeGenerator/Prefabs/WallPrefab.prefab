@@ -12,10 +12,14 @@ GameObject:
   - component: {fileID: 3328896}
   - component: {fileID: 2381534}
   - component: {fileID: 6436642}
+<<<<<<< HEAD
+  - component: {fileID: -9101381241271995494}
+=======
   - component: {fileID: -785483446724611358}
+>>>>>>> e75924e926c1232da5b626ea2c4391c5770d4b30
   m_Layer: 0
   m_Name: WallPrefab
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +98,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 338a423d70b874743b61e6bf69184e50, type: 3}
+<<<<<<< HEAD
+--- !u!114 &-9101381241271995494
+=======
 --- !u!114 &-785483446724611358
+>>>>>>> e75924e926c1232da5b626ea2c4391c5770d4b30
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,8 +111,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 144206}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: 3b60665b3e5a7fb4db186bbe879b9f76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  springForce: 100
+=======
   m_Script: {fileID: 11500000, guid: c1450904019284c658e40e5b9a3e5c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   springForce: 20
+>>>>>>> e75924e926c1232da5b626ea2c4391c5770d4b30
   damping: 5

@@ -32,7 +32,11 @@ public class MeshDeformer : MonoBehaviour {
 	}
 
 	void UpdateVertex (int i) {
+<<<<<<< HEAD
+        Vector3 velocity = vertexVelocities[i];
+=======
 		Vector3 velocity = vertexVelocities[i];
+>>>>>>> e75924e926c1232da5b626ea2c4391c5770d4b30
 		Vector3 displacement = displacedVertices[i] - originalVertices[i];
 		displacement *= uniformScale;
 		velocity -= displacement * springForce * Time.deltaTime;
