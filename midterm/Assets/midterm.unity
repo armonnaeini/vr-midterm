@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 11471494, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
       propertyPath: ViewCamera
       value: 
-      objectReference: {fileID: 1829098662}
+      objectReference: {fileID: 0}
     - target: {fileID: 11471494, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
       propertyPath: HitSound
       value: 
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dbd480039f60a344bdc0ff90b9d70b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MazeY: -7
+  MazeY: -5
   Algorithm: 1
   FullRandom: 1
   RandomSeed: 3

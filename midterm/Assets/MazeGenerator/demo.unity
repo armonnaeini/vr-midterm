@@ -38,11 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
-=======
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
->>>>>>> e75924e926c1232da5b626ea2c4391c5770d4b30
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -432,7 +428,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 493056, guid: 3549f273ff63f754eb749081e517a9fa, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
@@ -440,11 +435,6 @@ PrefabInstance:
     - target: {fileID: 126140, guid: 3549f273ff63f754eb749081e517a9fa, type: 2}
       propertyPath: m_TagString
       value: MainCamera
-=======
-    - target: {fileID: 2099578, guid: 3549f273ff63f754eb749081e517a9fa, type: 2}
-      propertyPath: field of view
-      value: 15
->>>>>>> e75924e926c1232da5b626ea2c4391c5770d4b30
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -631,7 +621,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 15
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
